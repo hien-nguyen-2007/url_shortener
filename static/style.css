@@ -1,0 +1,202 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+}
+
+/* Main content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* Take up full screen height minus header/footer */
+}
+
+.hero {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.url-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.url-form input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.url-form input:focus {
+    border-color: #007aff;
+    outline: none;
+}
+
+.url-form button {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.url-form button:hover {
+    background-color: #005bb5;
+}
+
+/* Result */
+.result {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.result a {
+    font-size: 1.2rem;
+    color: #007aff;
+    text-decoration: none;
+}
+
+.result a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Details Page */
+.details {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.details p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.details a {
+    color: #007aff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}
+
+.details .button {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.details .button:hover {
+    background-color: #005bb5;
+}
+
+/* Ensure the details page looks good on mobile devices */
+@media (max-width: 768px) {
+    .details {
+        padding: 20px;
+    }
+
+    .details h2 {
+        font-size: 2rem;
+    }
+
+    .details p {
+        font-size: 1rem;
+    }
+
+    .details .button {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
